@@ -75,7 +75,9 @@ PODS:
   - glog (0.3.5)
   - hermes-engine (0.70.6)
   - libevent (2.1.12)
+  - MyFood24 (0.1.0)
   - myfood24-digibete (0.1.0):
+    - MyFood24
     - React-Core
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.07.22.00):
@@ -404,6 +406,7 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
+  - "MyFood24 (from `git@github.com:matthew-russell-coherent/myfood24-pod.git`, branch `main`)"
   - myfood24-digibete (from `../..`)
   - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
@@ -468,6 +471,9 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes/hermes-engine.podspec"
+  MyFood24:
+    :branch: main
+    :git: "git@github.com:matthew-russell-coherent/myfood24-pod.git"
   myfood24-digibete:
     :path: "../.."
   RCT-Folly:
@@ -527,6 +533,11 @@ EXTERNAL SOURCES:
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
+CHECKOUT OPTIONS:
+  MyFood24:
+    :commit: 02ffe2efeb3beb1638adf666d8d1dfd03be2f614
+    :git: "git@github.com:matthew-russell-coherent/myfood24-pod.git"
+
 SPEC CHECKSUMS:
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
@@ -546,7 +557,8 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 2af7b7a59128f250adfd86f15aa1d5a2ecd39995
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  myfood24-digibete: 881e75528e99cb002440d17f4a162fa86e5cc4fa
+  MyFood24: eadf81a74c676d8d3f1eb74c9808c6df108d54bc
+  myfood24-digibete: 0eea7fd91a5926e89b08ddd552cf0f4728e020bb
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
   RCTRequired: e1866f61af7049eb3d8e08e8b133abd38bc1ca7a
@@ -579,6 +591,6 @@ SPEC CHECKSUMS:
   Yoga: 99caf8d5ab45e9d637ee6e0174ec16fbbb01bcfc
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: a51af6c412a5d51f3c8eb1f0beede59dee678beb
+PODFILE CHECKSUM: d3317530b17afb8f18fd5def7c224bba5652ff5f
 
 COCOAPODS: 1.11.3

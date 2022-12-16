@@ -1,7 +1,7 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, '12.4'
+platform :ios, '13'
 install! 'cocoapods', :deterministic_uuids => false
 
 target 'Myfood24DigibeteExample' do
@@ -30,6 +30,9 @@ target 'Myfood24DigibeteExample' do
     inherit! :complete
     # Pods for testing
   end
+
+  pod 'MyFood24', :git => 'git@github.com:matthew-russell-coherent/myfood24-pod.git', :branch => 'main'
+
 
   post_install do |installer|
     react_native_post_install(

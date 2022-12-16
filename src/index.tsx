@@ -20,3 +20,11 @@ const Myfood24Digibete = NativeModules.Myfood24Digibete
 export function multiply(a: number, b: number): Promise<number> {
   return Myfood24Digibete.multiply(a, b);
 }
+
+export function test(){
+  return Myfood24Digibete.test();
+}
+
+export function divide(a: number, b: number): Promise<number> {
+  return Myfood24Digibete.divide(a,b);
+}

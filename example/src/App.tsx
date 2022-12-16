@@ -1,18 +1,18 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'myfood24-digibete';
+import { StyleSheet, View, Text, NativeModules, TurboModuleRegistry, Button } from 'react-native';
+import { multiply, test, divide } from 'myfood24-digibete';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
-
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    divide(5,2).then(setResult);
   }, []);
-
+  // test();
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
+      <Button title="Click Me" onPress={()=>{test()}} />
     </View>
   );
 }
