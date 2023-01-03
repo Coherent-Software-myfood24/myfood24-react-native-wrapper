@@ -75,7 +75,7 @@ PODS:
   - glog (0.3.5)
   - hermes-engine (0.70.6)
   - libevent (2.1.12)
-  - MyFood24 (0.1.0)
+  - MyFood24 (0.1.1)
   - myfood24-digibete (0.1.0):
     - MyFood24
     - React-Core
@@ -535,7 +535,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MyFood24:
-    :commit: 02ffe2efeb3beb1638adf666d8d1dfd03be2f614
+    :commit: 95f5749e59b4ccf9bfbab712f984c93e42f662bb
     :git: "git@github.com:matthew-russell-coherent/myfood24-pod.git"
 
 SPEC CHECKSUMS:
@@ -557,7 +557,7 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 2af7b7a59128f250adfd86f15aa1d5a2ecd39995
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  MyFood24: eadf81a74c676d8d3f1eb74c9808c6df108d54bc
+  MyFood24: ecfcc9dd66344e9cd56b2d152a3dd91cc1aec3ec
   myfood24-digibete: 0eea7fd91a5926e89b08ddd552cf0f4728e020bb
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
@@ -591,6 +591,6 @@ SPEC CHECKSUMS:
   Yoga: 99caf8d5ab45e9d637ee6e0174ec16fbbb01bcfc
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: d3317530b17afb8f18fd5def7c224bba5652ff5f
+PODFILE CHECKSUM: f5aa282bdcc26bf7d2c03396fe63c6b87c043655
 
 COCOAPODS: 1.11.3

@@ -4,6 +4,8 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '13'
 install! 'cocoapods', :deterministic_uuids => false
 
+use_flipper!()
+
 target 'Myfood24DigibeteExample' do
   config = use_native_modules!
 
@@ -31,10 +33,22 @@ target 'Myfood24DigibeteExample' do
     # Pods for testing
   end
 
-  pod 'MyFood24', :git => 'git@github.com:matthew-russell-coherent/myfood24-pod.git', :branch => 'main'
+   pod 'MyFood24', :git => 'git@github.com:matthew-russell-coherent/myfood24-pod.git', :branch => 'main'
+#  pod 'MyFood24', :path => '/Users/matthewrussell/Development/Gitlab/Coherent/myfood24-framework-pod'
 
+  use_flipper!()
+
+#  post_install do |installer|
+#    react_native_post_install(installer)
+#      installer.pods_project.targets.each do |target|
+#          target.build_configurations.each do |config|
+#            config.build_settings["ONLY_ACTIVE_ARCH"] = "NO"
+#          end
+#      end
+#  end
 
   post_install do |installer|
+#    flipper_post_install(installer)
     react_native_post_install(
       installer,
       # Set `mac_catalyst_enabled` to `true` in order to apply patches
@@ -42,5 +56,17 @@ target 'Myfood24DigibeteExample' do
       :mac_catalyst_enabled => false
     )
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
-  end
+##    // arm64 simulator EXCLUDED_ARCHS setting:
+#      installer.pods_project.build_configurations.each do |config|
+#        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+#      end
+#
+#      installer.pods_project.targets.each do |target|
+#        target.build_configurations.each do |config|
+#            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+##            config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+#        end
+#      end
+#  end
+
 end

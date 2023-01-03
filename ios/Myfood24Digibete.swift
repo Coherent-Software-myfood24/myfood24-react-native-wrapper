@@ -17,6 +17,7 @@ class Myfood24Digibete: NSObject {
         })
         
         DispatchQueue.main.async {
+            print("Hmmm")
             let viewController = UIApplication.shared.keyWindow?.rootViewController
             viewController!.present(VC, animated: true)
         }
