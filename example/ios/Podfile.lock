@@ -75,7 +75,7 @@ PODS:
   - glog (0.3.5)
   - hermes-engine (0.70.6)
   - libevent (2.1.12)
-  - MyFood24 (0.1.1)
+  - MyFood24 (0.0.1)
   - myfood24-digibete (0.1.0):
     - MyFood24
     - React-Core
@@ -406,7 +406,7 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
-  - "MyFood24 (from `git@github.com:matthew-russell-coherent/myfood24-pod.git`, branch `main`)"
+  - "MyFood24 (from `git@github.com:matthew-russell-coherent/myfood24-framework-pod.git`)"
   - myfood24-digibete (from `../..`)
   - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
@@ -472,8 +472,7 @@ EXTERNAL SOURCES:
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes/hermes-engine.podspec"
   MyFood24:
-    :branch: main
-    :git: "git@github.com:matthew-russell-coherent/myfood24-pod.git"
+    :git: "git@github.com:matthew-russell-coherent/myfood24-framework-pod.git"
   myfood24-digibete:
     :path: "../.."
   RCT-Folly:
@@ -535,8 +534,8 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MyFood24:
-    :commit: 95f5749e59b4ccf9bfbab712f984c93e42f662bb
-    :git: "git@github.com:matthew-russell-coherent/myfood24-pod.git"
+    :commit: 393e54dd8252d195153635bd4887fbda42c0849e
+    :git: "git@github.com:matthew-russell-coherent/myfood24-framework-pod.git"
 
 SPEC CHECKSUMS:
   boost: a7c83b31436843459a1961bfd74b96033dc77234
@@ -557,7 +556,7 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 2af7b7a59128f250adfd86f15aa1d5a2ecd39995
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  MyFood24: ecfcc9dd66344e9cd56b2d152a3dd91cc1aec3ec
+  MyFood24: 07c8546e657aeaf93410e2df718109e5a74484cf
   myfood24-digibete: 0eea7fd91a5926e89b08ddd552cf0f4728e020bb
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
@@ -591,6 +590,6 @@ SPEC CHECKSUMS:
   Yoga: 99caf8d5ab45e9d637ee6e0174ec16fbbb01bcfc
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: f5aa282bdcc26bf7d2c03396fe63c6b87c043655
+PODFILE CHECKSUM: f0cd302bcb1968f9b92f14d1f5dd1161d68a9ca2
 
 COCOAPODS: 1.11.3

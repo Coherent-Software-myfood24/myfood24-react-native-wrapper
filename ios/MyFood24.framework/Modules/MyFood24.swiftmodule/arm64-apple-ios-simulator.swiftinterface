@@ -1,0 +1,31 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name MyFood24
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import MyFood24
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MainVC : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didReceiveMemoryWarning()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MainViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public func initMyFood24(onDismissCallback: @escaping () -> Swift.Void) -> MyFood24.MainViewController
+public func divide() -> Swift.Int
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func addCornerRadius(_ radius: CoreFoundation.CGFloat = 16)
+  @_Concurrency.MainActor(unsafe) public func addBorderLine(width: CoreFoundation.CGFloat = 1, color: UIKit.UIColor = UIColor.black.withAlphaComponent(0.1))
+  @_Concurrency.MainActor(unsafe) public func makeRounded()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addShadow(cornerRadius: CoreFoundation.CGFloat = 16, shadowColor: UIKit.UIColor = UIColor.black, shadowOffset: CoreFoundation.CGSize = CGSize(width: 0, height: 4), shadowOpacity: Swift.Float = 0.1, shadowRadius: CoreFoundation.CGFloat = 6)
+}

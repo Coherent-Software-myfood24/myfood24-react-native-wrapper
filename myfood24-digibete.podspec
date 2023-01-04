@@ -22,6 +22,8 @@ Pod::Spec.new do |s|
   # s.frameworks = 'MyFood24'
   # s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '/Applications/Xcode.app/Contents/Developer/Library/Frameworks' }
 
+  # s.vendored_frameworks = './ios/MyFood24.frameworks'
+
   # Don't install the dependencies when we run `pod install` in the old architecture.
   if ENV['RCT_NEW_ARCH_ENABLED'] == '1' then
     s.compiler_flags = folly_compiler_flags + " -DRCT_NEW_ARCH_ENABLED=1"

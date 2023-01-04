@@ -1,0 +1,978 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyFood24",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MainVC",
+        "printedName": "MainVC",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyFood24@objc(cs)MainVC(im)viewDidLoad",
+            "mangledName": "$s8MyFood246MainVCC11viewDidLoadyyF",
+            "moduleName": "MyFood24",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveMemoryWarning",
+            "printedName": "didReceiveMemoryWarning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyFood24@objc(cs)MainVC(im)didReceiveMemoryWarning",
+            "mangledName": "$s8MyFood246MainVCC23didReceiveMemoryWarningyyF",
+            "moduleName": "MyFood24",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "didReceiveMemoryWarning",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MainVC",
+                "printedName": "MyFood24.MainVC",
+                "usr": "c:@M@MyFood24@objc(cs)MainVC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyFood24@objc(cs)MainVC(im)initWithNibName:bundle:",
+            "mangledName": "$s8MyFood246MainVCC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "MyFood24",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MyFood24.MainVC?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MainVC",
+                    "printedName": "MyFood24.MainVC",
+                    "usr": "c:@M@MyFood24@objc(cs)MainVC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyFood24@objc(cs)MainVC(im)initWithCoder:",
+            "mangledName": "$s8MyFood246MainVCC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "MyFood24",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyFood24@objc(cs)MainVC",
+        "mangledName": "$s8MyFood246MainVCC",
+        "moduleName": "MyFood24",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyFood24",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MainViewController",
+        "printedName": "MainViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "onDismissCallback",
+            "printedName": "onDismissCallback",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8MyFood2418MainViewControllerC17onDismissCallbackyycvp",
+            "mangledName": "$s8MyFood2418MainViewControllerC17onDismissCallbackyycvp",
+            "moduleName": "MyFood24",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MyFood2418MainViewControllerC17onDismissCallbackyycvg",
+                "mangledName": "$s8MyFood2418MainViewControllerC17onDismissCallbackyycvg",
+                "moduleName": "MyFood24",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MyFood2418MainViewControllerC17onDismissCallbackyycvs",
+                "mangledName": "$s8MyFood2418MainViewControllerC17onDismissCallbackyycvs",
+                "moduleName": "MyFood24",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MyFood2418MainViewControllerC17onDismissCallbackyycvM",
+                "mangledName": "$s8MyFood2418MainViewControllerC17onDismissCallbackyycvM",
+                "moduleName": "MyFood24",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyFood24@objc(cs)MainViewController(im)viewDidLoad",
+            "mangledName": "$s8MyFood2418MainViewControllerC11viewDidLoadyyF",
+            "moduleName": "MyFood24",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onClose",
+            "printedName": "onClose(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyFood24@objc(cs)MainViewController(im)onClose:",
+            "mangledName": "$s8MyFood2418MainViewControllerC7onCloseyyypF",
+            "moduleName": "MyFood24",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "IBAction",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MainViewController",
+                "printedName": "MyFood24.MainViewController",
+                "usr": "c:@M@MyFood24@objc(cs)MainViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyFood24@objc(cs)MainViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s8MyFood2418MainViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "MyFood24",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MyFood24.MainViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MainViewController",
+                    "printedName": "MyFood24.MainViewController",
+                    "usr": "c:@M@MyFood24@objc(cs)MainViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyFood24@objc(cs)MainViewController(im)initWithCoder:",
+            "mangledName": "$s8MyFood2418MainViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "MyFood24",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyFood24@objc(cs)MainViewController",
+        "mangledName": "$s8MyFood2418MainViewControllerC",
+        "moduleName": "MyFood24",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "initMyFood24",
+        "printedName": "initMyFood24(onDismissCallback:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "MainViewController",
+            "printedName": "MyFood24.MainViewController",
+            "usr": "c:@M@MyFood24@objc(cs)MainViewController"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "() -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8MyFood2404initaB017onDismissCallbackAA18MainViewControllerCyyc_tF",
+        "mangledName": "$s8MyFood2404initaB017onDismissCallbackAA18MainViewControllerCyyc_tF",
+        "moduleName": "MyFood24",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "divide",
+        "printedName": "divide()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8MyFood246divideSiyF",
+        "mangledName": "$s8MyFood246divideSiyF",
+        "moduleName": "MyFood24",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyFood24"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIView",
+        "printedName": "UIView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "addCornerRadius",
+            "printedName": "addCornerRadius(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC8MyFood24E15addCornerRadiusyy14CoreFoundation7CGFloatVF",
+            "mangledName": "$sSo6UIViewC8MyFood24E15addCornerRadiusyy12CoreGraphics7CGFloatVF",
+            "moduleName": "MyFood24",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addBorderLine",
+            "printedName": "addBorderLine(width:color:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC8MyFood24E13addBorderLine5width5colory14CoreFoundation7CGFloatV_So7UIColorCtF",
+            "mangledName": "$sSo6UIViewC8MyFood24E13addBorderLine5width5colory12CoreGraphics7CGFloatV_So7UIColorCtF",
+            "moduleName": "MyFood24",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeRounded",
+            "printedName": "makeRounded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC8MyFood24E11makeRoundedyyF",
+            "mangledName": "$sSo6UIViewC8MyFood24E11makeRoundedyyF",
+            "moduleName": "MyFood24",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addShadow",
+            "printedName": "addShadow(cornerRadius:shadowColor:shadowOffset:shadowOpacity:shadowRadius:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "hasDefaultArg": true,
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MyFood24@@objc(cs)UIView(im)addShadowWithCornerRadius:shadowColor:shadowOffset:shadowOpacity:shadowRadius:",
+            "mangledName": "$sSo6UIViewC8MyFood24E9addShadow12cornerRadius11shadowColor0H6Offset0H7Opacity0hG0y12CoreGraphics7CGFloatV_So7UIColorCSo6CGSizeVSfALtF",
+            "moduleName": "MyFood24",
+            "isOpen": true,
+            "objc_name": "addShadowWithCornerRadius:shadowColor:shadowOffset:shadowOpacity:shadowRadius:",
+            "declAttributes": [
+              "Dynamic",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIView",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIView",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matthewrussell\/Development\/Gitlab\/Coherent\/MyFood24-Libary-iOS\/MyFood24\/MyFood24\/Classes\/ReplaceMe.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/matthewrussell\/Development\/Gitlab\/Coherent\/MyFood24-Libary-iOS\/MyFood24\/MyFood24\/Classes\/ReplaceMe.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matthewrussell\/Development\/Gitlab\/Coherent\/MyFood24-Libary-iOS\/MyFood24\/MyFood24\/Classes\/ReplaceMe.swift",
+      "kind": "FloatLiteral",
+      "offset": 269,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/matthewrussell\/Development\/Gitlab\/Coherent\/MyFood24-Libary-iOS\/MyFood24\/MyFood24\/Classes\/ReplaceMe.swift",
+      "kind": "IntegerLiteral",
+      "offset": 571,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/matthewrussell\/Development\/Gitlab\/Coherent\/MyFood24-Libary-iOS\/MyFood24\/MyFood24\/Classes\/ReplaceMe.swift",
+      "kind": "IntegerLiteral",
+      "offset": 700,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matthewrussell\/Development\/Gitlab\/Coherent\/MyFood24-Libary-iOS\/MyFood24\/MyFood24\/Classes\/ReplaceMe.swift",
+      "kind": "IntegerLiteral",
+      "offset": 711,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/matthewrussell\/Development\/Gitlab\/Coherent\/MyFood24-Libary-iOS\/MyFood24\/MyFood24\/Classes\/ReplaceMe.swift",
+      "kind": "FloatLiteral",
+      "offset": 763,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/matthewrussell\/Development\/Gitlab\/Coherent\/MyFood24-Libary-iOS\/MyFood24\/MyFood24\/Classes\/ReplaceMe.swift",
+      "kind": "IntegerLiteral",
+      "offset": 817,
+      "length": 1,
+      "value": "6"
+    }
+  ]
+}

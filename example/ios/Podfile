@@ -33,8 +33,9 @@ target 'Myfood24DigibeteExample' do
     # Pods for testing
   end
 
-   pod 'MyFood24', :git => 'git@github.com:matthew-russell-coherent/myfood24-pod.git', :branch => 'main'
-#  pod 'MyFood24', :path => '/Users/matthewrussell/Development/Gitlab/Coherent/myfood24-framework-pod'
+  #  pod 'MyFood24', :git => 'git@github.com:matthew-russell-coherent/myfood24-pod.git', :branch => 'main'
+    # pod 'MyFood24', :path => '/Users/matthewrussell/Development/Gitlab/Coherent/myfood24-framework-pod'
+   pod 'MyFood24', :git => 'git@github.com:matthew-russell-coherent/myfood24-framework-pod.git'
 
   use_flipper!()
 
@@ -67,6 +68,6 @@ target 'Myfood24DigibeteExample' do
 ##            config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
 #        end
 #      end
-#  end
+  end
 
 end

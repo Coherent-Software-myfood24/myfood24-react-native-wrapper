@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06421CA52965A20D00A5FC03 /* MyFood24.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06421CA42965A20D00A5FC03 /* MyFood24.framework */; platformFilter = ios; };
 		F4FF95D7245B92E800C19C63 /* Myfood24Digibete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* Myfood24Digibete.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06421CA42965A20D00A5FC03 /* MyFood24.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyFood24.framework; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libMyfood24Digibete.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyfood24Digibete.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5891CC2AC0600A0062D /* Myfood24Digibete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Myfood24Digibete.m; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* Myfood24Digibete-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Myfood24Digibete-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -34,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06421CA52965A20D00A5FC03 /* MyFood24.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				06421CA42965A20D00A5FC03 /* MyFood24.framework */,
 				F4FF95D6245B92E800C19C63 /* Myfood24Digibete.swift */,
 				B3E7B5891CC2AC0600A0062D /* Myfood24Digibete.m */,
 				F4FF95D5245B92E700C19C63 /* Myfood24Digibete-Bridging-Header.h */,

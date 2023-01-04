@@ -1,0 +1,11 @@
+framework module MyFood24 {
+  umbrella header "MyFood24-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module MyFood24.Swift {
+  header "MyFood24-Swift.h"
+  requires objc
+}
