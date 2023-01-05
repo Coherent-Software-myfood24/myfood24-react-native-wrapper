@@ -2,30 +2,32 @@
 
 A myfood24 integration with digibete
 
-## Installation
+<!-- ## Installation
 
 ```sh
 npm install myfood24-digibete
-```
+``` -->
 
 ## Usage
 
 ```js
-import { multiply } from 'myfood24-digibete';
+import { test } from 'myfood24-digibete';
 
 // ...
 
-const result = await multiply(3, 7);
+<Button title="Click Me" onPress={()=>{test()}} />
 ```
 
-## Contributing
+Currently the test function will provide you with a basic popup that will contain the integration.
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+If you are having any issues you can refer to the example folder as it contains a working connection of both the iOS and Android integrations.
 
-## License
+To setup the example folder run the following in the root of the project (where this file is located)
+```bash
+yarn
+yarn example ios
+```
 
-MIT
 
----
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
