@@ -35,7 +35,7 @@ target 'Myfood24DigibeteExample' do
 
   #  pod 'MyFood24', :git => 'git@github.com:matthew-russell-coherent/myfood24-pod.git', :branch => 'main'
     # pod 'MyFood24', :path => '/Users/matthewrussell/Development/Gitlab/Coherent/myfood24-framework-pod'
-   pod 'MyFood24', :git => 'git@github.com:matthew-russell-coherent/myfood24-framework-pod.git', :tag => '0.0.2'
+   pod 'MyFood24', :git => 'git@github.com:Coherent-Software-myfood24/myfood24-digibete-pod.git', :tag => '0.0.2'
 
   use_flipper!()
 
