@@ -2,11 +2,11 @@
 
 A myfood24 integration with digibete
 
-<!-- ## Installation
+## Installation
 
 ```sh
 npm install myfood24-digibete
-``` -->
+```
 
 ## Usage
 
