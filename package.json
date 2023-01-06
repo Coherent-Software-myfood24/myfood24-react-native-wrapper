@@ -1,6 +1,6 @@
 {
   "name": "myfood24-digibete",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -41,13 +41,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/krizzj/react-native-awesome-library",
+  "repository": "https://github.com/Coherent-Software-myfood24/myfood24-react-native-wrapper",
   "author": "Coherent Software <support@coherent.net> (https://coherent.net/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/krizzj/react-native-awesome-library/issues"
+    "url": "https://github.com/Coherent-Software-myfood24/myfood24-react-native-wrapper/issues"
   },
-  "homepage": "https://github.com/krizzj/react-native-awesome-library#readme",
+  "homepage": "https://github.com/Coherent-Software-myfood24/myfood24-react-native-wrapper#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
