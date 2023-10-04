@@ -1,33 +1,164 @@
-# myfood24-digibete
 
-A myfood24 integration with digibete
-
-## Installation
-
-```sh
-npm install myfood24-digibete
-```
-
-## Usage
-
-```js
-import { test } from 'myfood24-digibete';
-
-// ...
-
-<Button title="Click Me" onPress={()=>{test()}} />
-```
-
-Currently the test function will provide you with a basic popup that will contain the integration.
-
-If you are having any issues you can refer to the example folder as it contains a working connection of both the iOS and Android integrations.
-
-To setup the example folder run the following in the root of the project (where this file is located)
+Create example project
 ```bash
-yarn
-yarn example ios
+  npx react-native init MyFood24Test --template react-native-template-typescript
 ```
 
 
+
+Install react native library
+```bash
+cd MyFood24Test
+npm install myfood24-react-native-digibete
+```
+
+install pods
+in the iOS directory make replace the podfile contents with this
+```podfile
+# Resolve react_native_pods.rb with node to allow for hoisting
+
+require Pod::Executable.execute_command('node', ['-p',
+	'require.resolve(
+		"react-native/scripts/react_native_pods.rb",
+		{paths: [process.argv[1]]},
+	)', __dir__]).strip
+
+  
+
+platform :ios, '13'
+prepare_react_native_project!
+use_frameworks!
+
+  
+
+target 'MyFood24Test' do
+	config = use_native_modules!
+
+	# Flags change depending on the env values.
+	flags = get_default_flags()
+
+  
+
+	use_react_native!(
+		:path => config[:reactNativePath],
+		:hermes_enabled => flags[:hermes_enabled],
+		:fabric_enabled => flags[:fabric_enabled],
+		# An absolute path to your application root.
+		:app_path => "#{Pod::Config.instance.installation_root}/.."
+	)
+
+  
+
+	pre_install do |installer|
+		installer.pod_targets.each do |pod|
+			if pod.name.eql?('RNScreens') || pod.name.eql?('RNCMaskedView')
+				def pod.build_type
+					Pod::BuildType.static_library
+				end
+			end
+		end
+	end
+
+  
+
+	target 'DigiBeteMyFood24TestTests' do
+		inherit! :complete
+		# Pods for testing
+	end
+
+  
+
+	pod 'MyFood24', :git => 'git@github.com:Coherent-Software-myfood24/myfood24-digibete-pod.git', :tag => '1.0.45'
+
+  
+
+	post_install do |installer|
+		# https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
+		react_native_post_install(
+			installer,
+			config[:reactNativePath],
+			:mac_catalyst_enabled => false
+		)
+
+		__apply_Xcode_12_5_M1_post_install_workaround(installer)
+		
+		installer.pods_project.build_configurations.each do |config|
+			config.build_settings["ONLY_ACTIVE_ARCH"] = "NO"
+			config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+		end
+
+  
+
+		installer.pods_project.targets.each do |target|
+			target.build_configurations.each do |config|
+				xcconfig_path = config.base_configuration_reference.real_path
+				xcconfig = File.read(xcconfig_path)
+				xcconfig_mod = xcconfig.gsub(/DT_TOOLCHAIN_DIR/, "TOOLCHAIN_DIR")
+				File.open(xcconfig_path, "w") { |file| file << xcconfig_mod }
+			end
+		end
+		
+		installer.pods_project.targets.each do |target|
+			target.build_configurations.each do |config|
+				config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+			end
+		end
+	end
+end
+```
+
+then while in the iOS folder run
+```bash
+pod install
+```
+
+
+Test with in the root folder of the project
+```bash
+npx react-native run-ios
+```
+
+
+Once you can build the default app with the dependencies installed you can now call them, in `app.tsx` replace the content with this (Your linter may complain but it should run fine)
+```typescript
+import * as React from 'react';
+import { StyleSheet, View, Text, NativeModules, TurboModuleRegistry, Button } from 'react-native';
+import { multiply, initMyFood24, divide } from 'myfood24-react-native-digibete';
+
+  
+
+export default function App() {
+
+	const [result, setResult] = React.useState<number | undefined>();
+
+	React.useEffect(() => {
+		divide(5,2).then(setResult);
+	}, []);
+
+	return (
+		<View style={styles.container}>
+			<Text>Result: {result}</Text>
+			<Button title="Click Me" onPress={()=>{initMyFood24("7VLDR7sI.DCA6x6PIWWmwyrIvon3aWlef2I1KcOCD")}} />
+		</View>
+	);
+}
+
+  
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+
+	box: {
+		width: 60,
+		height: 60,
+		marginVertical: 20,
+	},
+
+});
+```
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
