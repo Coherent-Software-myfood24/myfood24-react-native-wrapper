@@ -61,7 +61,7 @@ target 'MyFood24Test' do
 
   
 
-	target 'DigiBeteMyFood24TestTests' do
+	target 'MyFood24TestTests' do
 		inherit! :complete
 		# Pods for testing
 	end
