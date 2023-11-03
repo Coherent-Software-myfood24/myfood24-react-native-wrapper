@@ -1,5 +1,5 @@
 
-Create example project
+# Create example project
 ```bash
   npx react-native init MyFood24Test --template react-native-template-typescript
 ```
@@ -160,5 +160,31 @@ const styles = StyleSheet.create({
 
 });
 ```
+
+## Bundle Example apps (Debug)
+
+### Android
+
+```bash
+    mkdir ./android/app/src/main/assets/
+    touch ./android/app/src/main/assets/index.android
+```
+
+```bash
+    npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+```
+
+```bash
+    cd android
+    ./gradlew app:assembleDebug
+```
+
+Then the file should be in
+```bash
+    ./app/build/outputs/apk/debug/app-debug.apk
+```
+
+### iOS
+
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
