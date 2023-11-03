@@ -184,7 +184,12 @@ Then the file should be in
     ./app/build/outputs/apk/debug/app-debug.apk
 ```
 
-### iOS
+### iOS (Debug)
+
+
+in the iOS folder just open the `MyFood24Test.xcworkspace`,
+Make sure you have a development team selected in the project file.
+select any iOS device (arm64) then click Product -> Archive, select custom (if you're on the newest version of xcode), select adhoc deployment and run through the wizard. this will give you an iPA you can deploy to your phone for testing via https://www.diawi.com/
 
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
